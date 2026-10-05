@@ -1,0 +1,485 @@
+/* ==============================
+   GENERAL STYLING
+   ============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3efff;
+    color: #333;
+}
+
+
+/* ==============================
+   HEADER
+   ============================== */
+
+header {
+    background: white;
+    color: #333;
+    padding: 16px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5def8;
+    box-shadow: 0 3px 12px rgba(108, 92, 231, 0.08);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #5a4fcf;
+    letter-spacing: 0.5px;
+}
+
+nav a {
+    color: #555;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+
+nav a:hover {
+    color: #6c5ce7;
+    background: #f0ebff;
+}
+
+
+/* ==============================
+   COMMON BOX
+   ============================== */
+
+.box {
+    background: white;
+    width: 88%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.1);
+}
+
+h2 {
+    color: #5a4fcf;
+    border-bottom: 3px solid #f3a6c8;
+    padding-bottom: 7px;
+}
+
+h3 {
+    color: #6c5ce7;
+}
+
+
+/* ==============================
+   HOME PAGE - HERO SECTION
+   ============================== */
+
+.hero {
+    width: 88%;
+    max-width: 1000px;
+    margin: 20px auto 15px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px 35px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.12);
+}
+
+.profile-circle {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6c5ce7, #f3a6c8);
+    color: white;
+    font-size: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #6c5ce7;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+.hero-text h2 {
+    font-size: 30px;
+    border: none;
+    margin: 7px 0;
+    color: #333;
+}
+
+.hero-text h2 span {
+    color: #6c5ce7;
+}
+
+.hero-text p {
+    line-height: 1.4;
+    color: #666;
+    margin: 7px 0;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 8px 18px;
+    background: #6c5ce7;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 13px;
+}
+
+.resume-btn:hover {
+    background: #5747c9;
+}
+
+
+/* ==============================
+   BIO-DATA SECTION
+   ============================== */
+
+.biodata {
+    width: 88%;
+    max-width: 1000px;
+    margin: 15px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(108, 92, 231, 0.1);
+}
+
+.biodata h2 {
+    margin: 0 0 8px;
+}
+
+.section-intro {
+    color: #777;
+    margin: 0 0 15px;
+    font-size: 13px;
+}
+
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.bio-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 13px;
+    background: #f8f6ff;
+    border-radius: 10px;
+    border: 1px solid #eee9ff;
+}
+
+.bio-item:hover {
+    transform: translateY(-2px);
+    transition: 0.2s;
+    box-shadow: 0 4px 10px rgba(108, 92, 231, 0.1);
+}
+
+.bio-item > span {
+    width: 35px;
+    height: 35px;
+    background: #e8ddff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-item small {
+    color: #777;
+    font-size: 11px;
+}
+
+.bio-item p {
+    margin: 2px 0 0;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   CAREER OBJECTIVE
+   ============================== */
+
+.objective {
+    width: 88%;
+    max-width: 1000px;
+    margin: 15px auto 5px;  
+    background: #eee9ff;
+    padding: 22px 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.objective h2 {
+    border: none;
+    margin: 4px 0;
+    color: #5747c9;
+    font-size: 20px;
+}
+
+.objective p {
+    line-height: 1.4;
+    color: #555;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+.stats {
+    display: flex;
+    gap: 10px;
+}
+
+.stats div {
+    background: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 75px;
+}
+
+.stats b {
+    display: block;
+    font-size: 17px;
+    color: #6c5ce7;
+}
+
+.stats small {
+    color: #777;
+    font-size: 10px;
+}
+
+
+/* ==============================
+   RESUME PAGE
+   ============================== */
+
+.resume-grid {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 30px;
+}
+
+.left {
+    background: #eee9ff;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.left h2 {
+    color: #5a4fcf;
+    border-bottom: 2px solid #f3a6c8;
+}
+
+.right {
+    padding: 0 5px;
+}
+
+
+/* Skills */
+
+.skills span {
+    display: inline-block;
+    background: #e8ddff;
+    color: #5747c9;
+    padding: 7px 11px;
+    margin: 4px 2px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+
+/* Education table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th {
+    background: #6c5ce7;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background: #f8f6ff;
+}
+
+
+/* Projects */
+
+.project {
+    background: #fff5fa;
+    border-left: 5px solid #f3a6c8;
+    padding: 13px;
+    margin: 12px 0;
+    border-radius: 8px;
+}
+
+.project b {
+    color: #5a4fcf;
+}
+
+.project p {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   CONTACT PAGE
+   ============================== */
+
+input,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin: 7px 0;
+    border: 1px solid #d6cef5;
+    border-radius: 8px;
+    background: #faf9ff;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    height: 110px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6c5ce7;
+}
+
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5747c9;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    margin-top: 5px;
+    background: #eee9ff;
+    color: #5a4fcf;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ddd3fa;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE DESIGN
+   ============================== */
+
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header h1 {
+        margin-bottom: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .profile-circle {
+        width: 90px;
+        height: 90px;
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .objective {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stats {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .resume-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .box,
+    .hero,
+    .biodata,
+    .objective {
+        width: 94%;
+    }
+}

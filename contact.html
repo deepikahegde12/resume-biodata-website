@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Contact Me</h1>
+    <nav>
+        <a href="index.html">Bio-data</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="box">
+
+    <h2>Contact Information</h2>
+
+    <p><b>Email:</b> rvit24bcs128.rvitm@rvei.edu.in</p>
+    <p><b>Phone:</b> +91 0123456789</p>
+    <p><b>Location:</b> Bangalore, Karnataka</p>
+
+    <h2>Send a Message</h2>
+
+    <form onsubmit="return showMessage();">
+    <input type="text" id="name" placeholder="Your Name">
+    <input type="email" id="email" placeholder="Your Email">
+    <textarea id="message" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+</form>
+
+</section>
+
+<footer>
+    <p>© <span id="year"></span> My Personal Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
