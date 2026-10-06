@@ -483,3 +483,20 @@ footer p {
         width: 94%;
     }
 }
+/* ==============================
+   RESUME BUTTONS
+   ============================== */
+
+.resume-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+.resume-buttons .resume-btn {
+    font-size: 13px;
+}
+
+.resume-buttons .resume-btn:hover {
+    background: #5747c9;
+}
