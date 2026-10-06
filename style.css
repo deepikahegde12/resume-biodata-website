@@ -1,7 +1,3 @@
-/* ==============================
-   GENERAL STYLING
-   ============================== */
-
 * {
     box-sizing: border-box;
 }
@@ -13,11 +9,7 @@ body {
     color: #333;
 }
 
-
-/* ==============================
-   HEADER
-   ============================== */
-
+/* Header */
 header {
     background: white;
     color: #333;
@@ -51,15 +43,17 @@ nav a:hover {
     background: #f0ebff;
 }
 
-
-/* ==============================
-   COMMON BOX
-   ============================== */
+/* Common boxes */
+.box,
+.hero,
+.biodata,
+.objective {
+    width: 88%;
+    max-width: 1000px;
+}
 
 .box {
     background: white;
-    width: 88%;
-    max-width: 1000px;
     margin: 25px auto;
     padding: 30px;
     border-radius: 15px;
@@ -76,14 +70,8 @@ h3 {
     color: #6c5ce7;
 }
 
-
-/* ==============================
-   HOME PAGE - HERO SECTION
-   ============================== */
-
+/* Home */
 .hero {
-    width: 88%;
-    max-width: 1000px;
     margin: 20px auto 15px;
     background: white;
     border-radius: 15px;
@@ -148,18 +136,14 @@ h3 {
     font-size: 13px;
 }
 
-.resume-btn:hover {
+.resume-btn:hover,
+.resume-buttons .resume-btn:hover,
+button:hover {
     background: #5747c9;
 }
 
-
-/* ==============================
-   BIO-DATA SECTION
-   ============================== */
-
+/* Bio-data */
 .biodata {
-    width: 88%;
-    max-width: 1000px;
     margin: 15px auto;
     background: white;
     padding: 25px 30px;
@@ -220,15 +204,9 @@ h3 {
     font-size: 13px;
 }
 
-
-/* ==============================
-   CAREER OBJECTIVE
-   ============================== */
-
+/* Career objective */
 .objective {
-    width: 88%;
-    max-width: 1000px;
-    margin: 15px auto 5px;  
+    margin: 15px auto 5px;
     background: #eee9ff;
     padding: 22px 30px;
     border-radius: 15px;
@@ -276,11 +254,7 @@ h3 {
     font-size: 10px;
 }
 
-
-/* ==============================
-   RESUME PAGE
-   ============================== */
-
+/* Resume */
 .resume-grid {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -302,9 +276,6 @@ h3 {
     padding: 0 5px;
 }
 
-
-/* Skills */
-
 .skills span {
     display: inline-block;
     background: #e8ddff;
@@ -315,9 +286,7 @@ h3 {
     font-size: 12px;
 }
 
-
-/* Education table */
-
+/* Education */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -341,9 +310,7 @@ tr:nth-child(even) {
     background: #f8f6ff;
 }
 
-
 /* Projects */
-
 .project {
     background: #fff5fa;
     border-left: 5px solid #f3a6c8;
@@ -361,11 +328,7 @@ tr:nth-child(even) {
     margin-bottom: 0;
 }
 
-
-/* ==============================
-   CONTACT PAGE
-   ============================== */
-
+/* Contact */
 input,
 textarea {
     width: 100%;
@@ -397,15 +360,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background: #5747c9;
-}
-
-
-/* ==============================
-   FOOTER
-   ============================== */
-
+/* Footer */
 footer {
     margin-top: 5px;
     background: #eee9ff;
@@ -420,13 +375,19 @@ footer p {
     font-size: 13px;
 }
 
+/* Resume buttons */
+.resume-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+}
 
-/* ==============================
-   MOBILE RESPONSIVE DESIGN
-   ============================== */
+.resume-buttons .resume-btn {
+    font-size: 13px;
+}
 
+/* Mobile */
 @media (max-width: 700px) {
-
     header {
         display: block;
         text-align: center;
@@ -482,21 +443,4 @@ footer p {
     .objective {
         width: 94%;
     }
-}
-/* ==============================
-   RESUME BUTTONS
-   ============================== */
-
-.resume-buttons {
-    margin-top: 25px;
-    display: flex;
-    gap: 12px;
-}
-
-.resume-buttons .resume-btn {
-    font-size: 13px;
-}
-
-.resume-buttons .resume-btn:hover {
-    background: #5747c9;
 }
